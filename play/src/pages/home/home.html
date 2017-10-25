@@ -1,18 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ion Mask & Text Mask
+      Ion Mask & Ngx Mask
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  IonMask - Pluritech
   <form [formGroup]="formTest" novalidate>
-    <ion-item>
+    <ion-item text-wrap>
       <p>mask="(99) 9999-9999", [dropSpecialCharacters]="true", [clearIfNotMatch]="false"</p>
     </ion-item>
     <ion-input-mask
@@ -22,7 +19,7 @@
       formControlName="phone"
       mask="(99) 9999-9999">
     </ion-input-mask>
-    <ion-item>
+    <ion-item text-wrap>
       <p>mask="(99) 9999-9999", [dropSpecialCharacters]="false", [clearIfNotMatch]="true"</p>
     </ion-item>
     <ion-input-mask
@@ -33,20 +30,20 @@
       [clearIfNotMatch]="true"
       [dropSpecialCharacters]="false"
       mask="(99) 9 9999-9999">
-  </ion-input-mask>
-  <ion-item>
-    <p>mask="999.999.999-99", initial with value</p>
-  </ion-item>
-  <ion-input-mask
-    label="CEP"
-    placeholder="999.999.999-99"
-    typeLabel="fixed"
-    formControlName="cep"
-    [clearIfNotMatch]="true"
-    [lastChild]="true"
-    [dropSpecialCharacters]="false"
-    mask="99.999-999">
-</ion-input-mask>
+    </ion-input-mask>
+    <ion-item text-wrap>
+      <p>mask="999.999.999-99", initial with value</p>
+    </ion-item>
+    <ion-input-mask
+      label="CEP"
+      placeholder="999.999.999-99"
+      typeLabel="fixed"
+      formControlName="cep"
+      [clearIfNotMatch]="true"
+      [lastChild]="true"
+      [dropSpecialCharacters]="false"
+      mask="99.999-999">
+    </ion-input-mask>
   </form>
   {{formTest?.getRawValue() | json}}
 
