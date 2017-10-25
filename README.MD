@@ -28,7 +28,7 @@ import { HomePage } from '../pages/home/home';
 
 
 // Import your library
-import { SampleModule } from 'ion-mask';
+import { IonMaskModule } from '@pluritech/ion-mask';
 
 @NgModule({
   declarations: [

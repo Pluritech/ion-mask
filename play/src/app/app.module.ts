@@ -1,11 +1,11 @@
-import { IonMaskModule } from '../../../src';
+// import { IonMaskModule } from '../../../src';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
+import { IonMaskModule } from '@pluritech/ion-mask';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
