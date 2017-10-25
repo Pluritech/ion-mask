@@ -1,9 +1,9 @@
 {
-  "name": "ion-mask",
-  "version": "0.1.0",
+  "name": "@pluritech/ion-mask",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pluritech/ion-facebook-provider"
+    "url": "https://github.com/Pluritech/ion-mask"
   },
   "author": {
     "name": "Lucas Correa",
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pluritech/ion-facebook-provider/issues"
+    "url": "https://github.com/Pluritech/ion-mask/issues"
   },
   "main": "ion-mask.umd.js",
   "module": "ion-mask.js",

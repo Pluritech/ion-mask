@@ -22,7 +22,7 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "ion-mask.js",
-    "flatModuleId": "ion-mask"
+    "flatModuleId": "@pluritech/ion-mask"
   },
   "files": [
     "./index.ts"
