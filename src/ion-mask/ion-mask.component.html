@@ -1,0 +1,18 @@
+<ion-item>
+    <ion-label *ngIf="getAttrLabel('stacked') && label" for="ionInput" stacked>{{label}}</ion-label>
+    <ion-label *ngIf="getAttrLabel('floating') && label" for="ionInput" floating>{{label}}</ion-label>
+    <ion-label *ngIf="getAttrLabel('fixed') && label" for="ionInput" fixed>{{label}}</ion-label>
+    <ion-label *ngIf="getAttrLabel('') && label" for="ionInput">{{label}}</ion-label>
+    <ion-input
+      id="ionInput"
+      type="tel"
+      [disabled]="disabled ? '' : null"
+      (keyup)="keyUpEvent($event)"
+      (blur)="onBlur($event)"
+      (change)="onChange($event)"
+      [(ngModel)]="valueIonInput"
+      [attr.clearInput]="getAttrClearInput()"
+      [placeholder]="getAttrPlaceholder()">
+  </ion-input>
+</ion-item>
+<div *ngIf="!lastChild"></div>

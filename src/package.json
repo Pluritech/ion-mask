@@ -1,0 +1,28 @@
+{
+  "name": "ion-mask",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pluritech/ion-facebook-provider"
+  },
+  "author": {
+    "name": "Lucas Correa",
+    "email": "lucasccorrea@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pluritech/ion-facebook-provider/issues"
+  },
+  "main": "ion-mask.umd.js",
+  "module": "ion-mask.js",
+  "jsnext:main": "ion-mask.js",
+  "typings": "ion-mask.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
