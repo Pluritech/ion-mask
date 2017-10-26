@@ -18,6 +18,7 @@ export class IonInputMaskComponent implements ControlValueAccessor, OnInit {
   @Input() placeholder: string;
   @Input() label: string;
   @Input() typeLabel = '';
+  @Input() typeInput = '';
   @Input() clearInput = false;
   @Input() lastChild = false;
   @Input() disabled = false;
@@ -76,6 +77,10 @@ export class IonInputMaskComponent implements ControlValueAccessor, OnInit {
   public keyUpEvent(event) {
     this.valueIonInput = this.ionMaskService.applyMask(this.valueIonInput, this.mask);
     this.onChange(event);
+  }
+
+  public getAttrTypeInput() {
+    return this.typeInput || 'text';
   }
 
   public getAttrLabel(type: string) {

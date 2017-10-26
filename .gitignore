@@ -34,3 +34,5 @@ dist/*
 # Play files
 play/node_modules
 play/www
+play/platforms
+play/plugins

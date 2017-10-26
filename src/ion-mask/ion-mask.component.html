@@ -5,7 +5,7 @@
     <ion-label *ngIf="getAttrLabel('') && label" for="ionInput">{{label}}</ion-label>
     <ion-input
       id="ionInput"
-      type="tel"
+      [type]="getAttrTypeInput()"
       [disabled]="disabled ? '' : null"
       (keyup)="keyUpEvent($event)"
       (blur)="onBlur($event)"

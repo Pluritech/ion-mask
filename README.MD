@@ -58,6 +58,7 @@ Once the library is imported, you can use the compenents ion-input-mask
   <form [formGroup]="formTest" novalidate>
     <ion-input-mask
       label="Phone"
+      typeInput="tel"
       placeholder="(99) 9999-9999"
       typeLabel="fixed"
       formControlName="phone"
