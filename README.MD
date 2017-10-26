@@ -1,5 +1,5 @@
 # ion-mask
-  This library is based on service of awesome  https://github.com/JsDaddy/ngx-mask, as this dont work with Ionic 2+, we create ion-mask that gather https://github.com/JsDaddy/ngx-mask and  https://github.com/Pluritech/ion-currencymask .
+  This library is based on service of awesome  https://github.com/JsDaddy/ngx-mask, as this don't work with Ionic 2+ because of the way they wrap the input inside an ion-input, we create ion-mask that gather https://github.com/JsDaddy/ngx-mask and  https://github.com/Pluritech/ion-currencymask .
 
 <p align="center">
   <img src="./ion-mask.gif">
