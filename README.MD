@@ -86,6 +86,16 @@ Once the library is imported, you can use the compenents ion-input-mask
   </form>
 ```
 
+### Patterns
+   We have these following default patterns to use it in mask attribute:
+   
+  | code | meaning |
+  |------|---------|
+  | **0** | digits (like 0 to 9 numbers) |
+  | **9** | digits (like 0 to 9 numbers), but optional |
+  | **A** | letters (uppercase or lowercase) and digits |
+  | **S** | only letters (uppercase or lowercase) |
+
 ## Development
 
 To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
