@@ -1,5 +1,5 @@
-import { Injectable, Inject } from '@angular/core';
-import { config, IConfig } from './config';
+import { Injectable } from '@angular/core';
+import { IConfig, initialConfig } from './config';
 
 @Injectable()
 export class IonMaskService {
@@ -11,11 +11,11 @@ export class IonMaskService {
   private _regExpForRemove: RegExp;
   private _shift: Set<number> = new Set();
 
-  public constructor(@Inject(config) private _config: IConfig) {
-    this.clearIfNotMatch = this._config.clearIfNotMatch;
-    this.dropSpecialCharacters = this._config.dropSpecialCharacters;
-    this.maskSpecialCharacters = this._config!.specialCharacters;
-    this.maskAvailablePatterns = this._config.patterns;
+  public constructor() {
+    this.clearIfNotMatch = initialConfig.clearIfNotMatch;
+    this.dropSpecialCharacters = initialConfig.dropSpecialCharacters;
+    this.maskSpecialCharacters = initialConfig!.specialCharacters;
+    this.maskAvailablePatterns = initialConfig.patterns;
     this._regExpForRemove = new RegExp(this.maskSpecialCharacters
       .map((item: string) => `\\${item}`)
       .join('|'), 'gi');

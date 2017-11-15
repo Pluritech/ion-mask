@@ -7,8 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
-// import { IonMaskModule } from '@pluritech/ion-mask';
-import { IonMaskModule } from '../../../src';
+import { IonMaskModule } from '@pluritech/ion-mask';
 
 @NgModule({
   declarations: [

@@ -1,6 +1,6 @@
-import { IConfig } from './../config';
+import { IConfig, initialConfig } from './../config';
 import { IonMaskService } from './../ion-mask.service';
-import { Component, forwardRef, Input, OnInit } from '@angular/core';
+import { Component, Inject, forwardRef, Input, OnInit } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
 @Component({
@@ -31,11 +31,14 @@ export class IonInputMaskComponent implements ControlValueAccessor, OnInit {
 
   public valueIonInput: string;
 
+  private ionMaskService: IonMaskService;
+
   private value: string;
   private propagateChange = (_: any) => { };
 
 
-  constructor(private ionMaskService: IonMaskService) {
+  constructor() {
+    this.ionMaskService = new IonMaskService();
   }
 
   public registerOnTouched() {}

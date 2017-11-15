@@ -21,8 +21,7 @@ export * from './ion-mask/ion-mask.component';
   ],
   exports: [
     IonInputMaskComponent
-  ],
-  providers: [IonMaskService]
+  ]
 })
 export class IonMaskModule {
   public static forRoot(configValue: optionsConfig = initialConfig): ModuleWithProviders {
