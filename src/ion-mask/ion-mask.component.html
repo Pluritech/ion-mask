@@ -8,7 +8,7 @@
       [type]="getAttrTypeInput()"
       [disabled]="disabled ? '' : null"
       (keyup)="keyUpEvent($event)"
-      (blur)="onBlur($event)"
+      (ionBlur)="onBlur($event)"
       (change)="onChange($event)"
       [(ngModel)]="valueIonInput"
       [attr.clearInput]="getAttrClearInput()"
